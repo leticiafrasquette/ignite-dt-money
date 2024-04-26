@@ -4,13 +4,13 @@ import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
 import { TransactionsContext } from '../../contexts/TransactionsContext'
 import { dateFormatter, priceFormatter } from '../../utils/formatter'
-import { SearchForm } from './Components/SearchForm'
 import {
   NoTransactions,
   PriceHighlight,
   TransactionsContainer,
   TransactionsTable,
 } from './styles'
+import { SearchForm } from './Components/SearchForm'
 
 export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
