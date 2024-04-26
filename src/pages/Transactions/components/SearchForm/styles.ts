@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SearchFormContainer = styled.form`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 
   input {
     flex: 1;
@@ -13,7 +13,7 @@ export const SearchFormContainer = styled.form`
     padding: 1rem;
 
     &::placeholder {
-      ${(props) => props.theme['gray-500']};
+      color: ${(props) => props.theme['gray-500']};
     }
   }
 
@@ -22,6 +22,8 @@ export const SearchFormContainer = styled.form`
     align-items: center;
     gap: 0.75rem;
 
+    cursor: pointer;
+
     border: 0;
     padding: 1rem;
     background: transparent;
@@ -29,7 +31,6 @@ export const SearchFormContainer = styled.form`
     color: ${(props) => props.theme['green-300']};
     font-weight: bold;
     border-radius: 6px;
-    cursor: pointer;
 
     &:disabled {
       opacity: 0.6;

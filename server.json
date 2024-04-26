@@ -6,39 +6,47 @@
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createdAt": "2023-03-24T10:31:43.131Z"
+      "createdAt": "2022-07-29T19:36:44.505Z"
     },
     {
       "id": 2,
-      "description": "Farmácia",
+      "description": "Hambúrguer",
       "type": "outcome",
-      "category": "Farmácia",
-      "price": 150,
-      "createdAt": "2023-03-24T10:32:43.131Z"
+      "category": "Alimentação",
+      "price": 60,
+      "createdAt": "2022-07-29T19:30:44.505Z"
     },
     {
-      "id": 2,
-      "description": "Ignite - Rocketseat",
+      "id": 3,
+      "description": "Ignite Rocketseat",
       "type": "outcome",
       "category": "Educação",
-      "price": 1700,
-      "createdAt": "2023-03-26T10:32:43.131Z"
+      "price": 1980,
+      "createdAt": "2022-07-29T19:24:44.505Z"
     },
     {
       "description": "Desenvolvimento de app",
       "price": 10000,
       "category": "Venda",
       "type": "income",
-      "createdAt": "2023-03-26T14:55:07.410Z",
-      "id": 3
+      "createdAt": "2022-07-30T13:26:57.560Z",
+      "id": 4
     },
     {
-      "description": "Mercado",
-      "price": 200,
+      "description": "Pastel",
+      "price": 5,
       "category": "Alimentação",
       "type": "outcome",
-      "createdAt": "2023-03-26T14:56:24.504Z",
-      "id": 4
+      "createdAt": "2022-07-30T13:30:57.560Z",
+      "id": 5
+    },
+    {
+      "description": "Iogurte de Banana",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-07-30T13:38:57.560Z",
+      "id": 6
     }
   ]
 }
