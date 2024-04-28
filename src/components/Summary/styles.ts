@@ -13,11 +13,11 @@ export const SummaryContainer = styled.section`
   margin-top: -5rem;
 `
 
-interface SymmaryCardProps {
+interface SummaryCardProps {
   variant?: 'green'
 }
 
-export const SummaryCard = styled.div<SymmaryCardProps>`
+export const SummaryCard = styled.div<SummaryCardProps>`
   background: ${(props) => props.theme['gray-600']};
   border-radius: 6px;
   padding: 2rem;

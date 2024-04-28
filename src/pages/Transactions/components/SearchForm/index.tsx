@@ -10,7 +10,7 @@ const searchFormSchema = z.object({
   query: z.string(),
 })
 
-type SearchFormInput = z.infer<typeof searchFormSchema>
+type SearchFormInputs = z.infer<typeof searchFormSchema>
 
 export function SearchForm() {
   const fetchTransactions = useContextSelector(
@@ -23,19 +23,17 @@ export function SearchForm() {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { isSubmitting },
-  } = useForm<SearchFormInput>({
+  } = useForm<SearchFormInputs>({
     resolver: zodResolver(searchFormSchema),
   })
 
-  async function handleSearchTransaction(data: SearchFormInput) {
+  async function handleSearchTransactions(data: SearchFormInputs) {
     await fetchTransactions(data.query)
-    reset()
   }
 
   return (
-    <SearchFormContainer onSubmit={handleSubmit(handleSearchTransaction)}>
+    <SearchFormContainer onSubmit={handleSubmit(handleSearchTransactions)}>
       <input
         type="text"
         placeholder="Busque por transações"
